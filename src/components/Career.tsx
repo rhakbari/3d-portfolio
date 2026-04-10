@@ -15,58 +15,46 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Co-Founder</h4>
-                <h5>CallHQ.ai</h5>
+                <h4>Software Engineer</h4>
+                <h5>iVolve Technologies</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Building CallHQ.ai, a voice AI platform for
-              automating customer calls, support, and conversions.
+              Designing and building full-stack microservice-based web applications
+              with TypeScript, React, Next.js, Nest.js, Express.js, FastAPI, and
+              Django. Architecting REST and GraphQL APIs, maintaining monorepo
+              microfrontends, managing cloud infrastructure on AWS, GCP, VMWare,
+              and OpenStack, and shipping containerized Docker deployments with
+              CI/CD pipelines.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Adobe</h4>
-                <h5>6+ years · Noida</h5>
+                <h4>Trainee Software Engineer</h4>
+                <h5>iVolve Technologies</h5>
               </div>
-              <h3>2017–24</h3>
+              <h3>2021</h3>
             </div>
             <p>
-              Senior Lead Software Engineer (Feb 2024 – May 2024). Lead Software
-              Engineer (Feb 2021 – Feb 2024). Software Engineer II (Dec 2017 –
-              Feb 2021): internationalization, globalization, and localization for
-              Adobe Technical Communication Suite; functional and linguistic testing
-              strategy; in-house tooling; collaboration with product and engineering
-              for high-quality localized releases.
+              Aug 2021 – Nov 2021. Completed intensive training in TypeScript and
+              modern software development practices. Contributed to documentation
+              and assisted in developing and maintaining software applications.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Consultant</h4>
-                <h5>Genpact Headstrong </h5>
+                <h4>Internee Engineer</h4>
+                <h5>The General Tyre and Rubber Company</h5>
               </div>
-              <h3>2016–17</h3>
+              <h3>2019</h3>
             </div>
             <p>
-              Sep 2016 – Nov 2017. Developed and maintained WCF services consumed
-              by the UI; deployment support across environments; NUnit tests and
-              coverage; bug fixes from QA and users; database work.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Sf Engineer</h4>
-                <h5>Infogain</h5>
-              </div>
-              <h3>2013-16</h3>
-            </div>
-            <p>
-              Software engineering across enterprise projects, contributing to
-              design, development, and delivery of business applications.
+              May 2019 – Jun 2019. Programmed and debugged PLCs, commissioned a
+              new fabric cutting machine for tyres, conducted electrical system
+              analysis, and designed UI on Siemens HMI.
             </p>
           </div>
         </div>

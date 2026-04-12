@@ -98,8 +98,14 @@ const WhatIDo = () => {
                 <div className="what-tags">TypeScript</div>
                 <div className="what-tags">React</div>
                 <div className="what-tags">Next.js</div>
+                <div className="what-tags">Redux</div>
+                <div className="what-tags">Zustand</div>
+                <div className="what-tags">TanStack Query</div>
                 <div className="what-tags">Nest.js</div>
+                <div className="what-tags">Express.js</div>
                 <div className="what-tags">FastAPI</div>
+                <div className="what-tags">Django</div>
+                <div className="what-tags">Flask</div>
                 <div className="what-tags">REST &amp; GraphQL</div>
               </div>
               <div className="what-arrow"></div>
@@ -134,10 +140,15 @@ const WhatIDo = () => {
               <div className="what-content-flex">
                 <div className="what-tags">AWS</div>
                 <div className="what-tags">GCP</div>
+                <div className="what-tags">Azure</div>
                 <div className="what-tags">Docker</div>
-                <div className="what-tags">CI/CD</div>
+                <div className="what-tags">Docker Compose</div>
+                <div className="what-tags">GitHub Actions</div>
                 <div className="what-tags">Jenkins</div>
+                <div className="what-tags">Ansible</div>
                 <div className="what-tags">PostgreSQL</div>
+                <div className="what-tags">MySQL</div>
+                <div className="what-tags">Neo4j</div>
               </div>
               <div className="what-arrow"></div>
             </div>

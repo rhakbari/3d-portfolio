@@ -6,12 +6,12 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          I am a full-stack software engineer with 4+ years of experience building
-          scalable web applications and cloud solutions across AWS, Azure, and GCP.
-          I work across the stack with TypeScript, React, Next.js, Node.js, and
-          Python — architecting microservices, optimizing APIs, and shipping
-          containerized deployments. I enjoy turning complex product requirements
-          into performant, maintainable systems end to end.
+          I am a Senior Full Stack Engineer with almost 5 years of experience
+          designing and delivering scalable microservices, cloud-native
+          applications, and SaaS platforms. Proficient in TypeScript, React.js,
+          Next.js, Node.js, and Python across AWS, GCP, and Azure. Proven track
+          record of leading engineering teams, architecting performant APIs, and
+          driving end-to-end delivery from infrastructure to UI.
         </p>
       </div>
     </div>

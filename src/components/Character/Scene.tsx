@@ -10,8 +10,10 @@ import {
   handleTouchMove,
 } from "./utils/mouseUtils";
 import setAnimations from "./utils/animationUtils";
+import { useLoading } from "../../context/LoadingProvider";
 
 const Scene = () => {
+  const { setModelReady } = useLoading();
   const canvasDiv = useRef<HTMLDivElement | null>(null);
   const hoverDivRef = useRef<HTMLDivElement>(null);
   const sceneRef = useRef(new THREE.Scene());
@@ -59,11 +61,7 @@ const Scene = () => {
           scene.add(character);
           headBone = character.getObjectByName("spine006") || null;
           screenLight = character.getObjectByName("screenlight") || null;
-          import("../utils/initialFX").then((module) => {
-            if (module.initialFX) {
-              module.initialFX();
-            }
-          });
+          setModelReady(true);
           setTimeout(() => {
             light.turnOnLights();
             animations.startIntro();

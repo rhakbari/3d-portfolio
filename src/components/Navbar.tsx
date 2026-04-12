@@ -23,21 +23,31 @@ const Navbar = () => {
     smoother.scrollTop(0);
     smoother.paused(true);
 
-    let links = document.querySelectorAll(".header ul a");
+    const links = document.querySelectorAll(".header ul a");
+    const clickHandlers: { element: HTMLAnchorElement; handler: (e: Event) => void }[] = [];
     links.forEach((elem) => {
-      let element = elem as HTMLAnchorElement;
-      element.addEventListener("click", (e) => {
+      const element = elem as HTMLAnchorElement;
+      const handler = (e: Event) => {
         if (window.innerWidth > 1024) {
           e.preventDefault();
-          let elem = e.currentTarget as HTMLAnchorElement;
-          let section = elem.getAttribute("data-href");
+          const section = element.getAttribute("data-href");
           smoother.scrollTo(section, true, "top top");
         }
-      });
+      };
+      element.addEventListener("click", handler);
+      clickHandlers.push({ element, handler });
     });
-    window.addEventListener("resize", () => {
-      ScrollSmoother.refresh(true);
-    });
+    const onResize = () => ScrollTrigger.refresh(true);
+    window.addEventListener("resize", onResize);
+
+    return () => {
+      clickHandlers.forEach(({ element, handler }) =>
+        element.removeEventListener("click", handler)
+      );
+      window.removeEventListener("resize", onResize);
+      smoother.kill();
+      ScrollTrigger.getAll().forEach((t) => t.kill());
+    };
   }, []);
   return (
     <>
